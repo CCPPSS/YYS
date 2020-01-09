@@ -166,14 +166,11 @@ export default {
     }
   },
   components: {},
-  mounted() {
-    //页面加载好后执行
-    setTimeout(console.log("加载好了"), 1500);
-    setTimeout(this.toImage(), 500);
-  },
+
   methods: {
+    /*动态设置字体*/
     fontSize() {
-      return "160px"
+      return "120px"
     },
 
     test() {
@@ -201,6 +198,12 @@ export default {
         // this.sendUrl()
       });
     }
+  },
+
+  mounted() {
+    // 页面加载好后执行
+    setTimeout(console.log("加载好了"), 1500);
+    setTimeout(this.toImage(), 500);
   }
 };
 
