@@ -19,7 +19,7 @@ git push -u save master
 goto end
 
 :save
-git commit -m "[Fast Save] %DATE%-%time%"
+git commit -m "[first] %DATE%-%time%"
 git push -u save master
 
 :end
