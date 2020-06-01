@@ -1,0 +1,60 @@
+/*
+* @Author: SSD_WIN10
+* @Date:   2020-04-27 12:13:29
+* @Last Modified by:   SSD_WIN10
+* @Last Modified time: 2020-04-30 21:40:19
+*/
+nav
+{
+    z-index: 500;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 220px;
+    height: 100vh;
+
+    box-shadow: -1px 0 15px #676666;
+
+    order: 0;
+    flex-grow: 0;
+}
+
+nav > section
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 10px;
+}
+nav > section > button
+{
+    box-sizing: border-box;
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+nav > section:nth-child(1)
+{
+    background-color: #3312e0;
+
+    align-self: auto;
+    flex-grow: 0;
+}
+nav > section:nth-child(2)
+{
+    align-self: auto;
+    flex-grow: 1;
+}
+
+nav > section:nth-last-child(1)
+{
+    margin-bottom: 30px;
+
+    background-color: #d836cd;
+
+    align-self: auto;
+    flex-grow: 0;
+}

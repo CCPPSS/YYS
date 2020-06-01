@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>样式测试</title>
+
+  <!-- 公共样式 -->
+  <link
+    rel="stylesheet"
+    href="../src/css/cps_ui.css"
+  >
+  <!-- 导航条样式 -->
+  <link
+    rel="stylesheet"
+    href="../src/css/app_nav.css"
+  >
+
+  <!-- 主体内容样式-->
+  <link
+    rel="stylesheet"
+    href="../src/css/app_main.css"
+  >
+</head>
+<style>
+body {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+body>footer {
+  z-index: 600;
+  position: fixed;
+  bottom: 0px;
+  height: 30px;
+  width: 100vw;
+  background-color: #A19E9E;
+}
+
+</style>
+
+<body>
+  <!-- 导航条 -->
+  <nav>
+    <section>
+      <h2>快捷操作</h2>
+      <select
+        name="conut_list"
+        id="conut_list"
+      >
+        <optgroup label="账号列表">
+          <option value="count_1">账号1</option>
+          <option value="count_2">账号2</option>
+          <option value="count_3">账号3</option>
+        </optgroup>
+        <optgroup label="配置">
+          <option value="count_1">保存当前配置</option>
+          <option value="count_2">读取当前配置</option>
+          <option value="count_3">获取默认配置</option>
+        </optgroup>
+      </select>
+    </section>
+
+    <section>
+      <button
+        class="c-button-2"
+        id="test"
+      >测试</button>
+      <button class="c-button-2">仪表盘</button>
+      <button
+        class="c-button-2"
+        id="config_btn"
+      >常用配置</button>
+      <button class="c-button-2">账号管理</button>
+      <button class="c-button-2">插件管理</button>
+    </section>
+
+    <section>
+      <ul>
+        <h2>更多</h2>
+        <li>关于</li>
+        <li>购买</li>
+      </ul>
+    </section>
+  </nav>
+
+  <!-- 主体 -->
+  <main>
+    <header>
+      <section id=m>
+        <span>ccvb</span>
+        <div id="w"><img
+            src=""
+            alt=""
+          ></div>
+      </section>
+    </header>
+    <article>
+      <section class="content"></section>
+      <footer class="contentFooter"><span>...载入功能...</span></footer>
+    </article>
+  </main>
+
+  <!-- 底部 -->
+  <footer>插件状态条
+    <progress
+      value="20"
+      max="100"
+    ></progress>
+  </footer>
+</body>
+<script src="./renderer/renderer.js"></script>
+<script src="./renderer/navBar.js"></script>
+
+</html>

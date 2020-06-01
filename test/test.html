@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CPS-YS</title>
+  <script src="../src/icon/iconfont.js"></script>
+  <script src="jquery-2.2.0.min.js"></script>
+  <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+  <h1>test 模板</h1>
+
+  <!-- 测试div -->
+  <div id="test1">
+    <p id="testp"></p>
+    <svg class="icon" aria-hidden="true">
+      <use xlink:href="#icon-shoucang"></use>
+    </svg>
+  </div>
+
+  <div id="cmbox">
+    <img id="cm-logo" src="" alt="音乐logo">
+
+    <!-- 播放标签1 -->
+    <audio id="cm-audio">
+      <source src="./src/mp3/steam.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 指定文件夹按钮 -->
+    <svg class="icon" aria-hidden="true">
+      <use xlink:href="#icon-dingdan"></use>
+    </svg>
+
+    <!-- 播放按钮 -->
+    <svg class="icon" aria-hidden="true" id="cm-play-btn">
+      <use xlink:href="#icon-bofang"></use>
+    </svg>
+
+    <!-- 前一首 -->
+    <svg class="icon" aria-hidden="true" id="icon-jiantouzuo">
+      <use xlink:href="#icon-jiantouyou"></use>
+    </svg>
+
+    <!-- 下一首 -->
+    <svg class="icon" id="" aria-hidden="true">
+      <use xlink:href="#icon-jiantouyou"></use>
+    </svg>
+
+
+    <!-- 试用按钮 -->
+    <input id="test-btn" type="submit" name="login-flase" value="试用">
+
+    <!-- 获取播放列表 -->
+    <input type="button" id="getMuiseList" value="获取播放列表">
+
+    <!-- 试用按钮 -->
+    <input type="button" id="fileImport" value="添加播放列表">
+  </div>
+
+  <!-- You can also require other files to run in this process -->
+  <script src="./test.js"></script>
+  <style>
+
+  </style>
+</body>
+
+</html>

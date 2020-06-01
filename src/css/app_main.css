@@ -1,0 +1,103 @@
+/*
+* @Author: SSD_WIN10
+* @Date:   2020-04-27 12:15:37
+* @Last Modified by:   SSD_WIN10
+* @Last Modified time: 2020-05-28 23:40:51
+*/
+main
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 800px;
+    height: 100vh;
+
+    background-color: #e1b7ec;
+
+    order: 1;
+    flex-grow: 2;
+}
+
+main > header
+{
+    width: 100%;
+    padding: 15px;
+
+    background-color: #bbe6d6;
+
+    align-self: flex-start;
+    flex-grow: 0;
+}
+
+main > article
+{
+    overflow: scroll;
+
+    width: 100%;
+
+    background-color: #d1f4e7;
+
+    flex-grow: 1;
+}
+.content
+{
+    box-sizing: border-box;
+    width: 600px;
+    height: 300px;
+    margin: 15px;
+
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .05);
+}
+
+.contentFooter
+{
+    font-size: 15px;
+    line-height: 100px;
+
+    box-sizing: border-box;
+    width: 600px;
+    height: 100px;
+    margin: 15px;
+
+    text-align: center;
+
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.contentFooter > span
+{
+    color: #CDCDCD;
+}
+
+
+.contentFooter:hover
+{
+    cursor: pointer;
+    animation: c1 .8s forwards;
+}
+
+.contentFooter:hover > span
+{
+    animation: opct .8s forwards;
+}
+/* 灰色的渐变效果 */
+@keyframes c1
+{
+    100%
+    {
+        background-color: #A5A5A5;
+    }
+}
+
+/* 灰色的渐变效果 */
+@keyframes opct
+{
+    100%
+    {
+        font-size: 25px;
+        color: #FFFFFF;
+    }
+}

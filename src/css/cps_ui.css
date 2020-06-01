@@ -1,0 +1,142 @@
+/* 通用样式 */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* 蓝色倒角的按钮 */
+.c-button-1
+{
+    font-size: 15px;
+
+    min-width: 120px;
+    min-height: 30px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: white;
+    border: 0 solid transparent;
+    border-radius: 4px;
+    outline: none;
+    background-color: #20d1e3;
+}
+.c-button-1:hover
+{
+    background-color: antiquewhite;
+}
+
+/* 透明过度效果按钮 */
+.c-button-2
+{
+    font-size: 18px;
+
+    width: 100%;
+    min-height: 45px;
+
+    cursor: pointer;
+    transition: color .25s,background-color .25s;
+    text-align: center;
+
+    color: #898989;
+    border: 0 solid transparent;
+    outline: none;
+    background-color: #fff;
+}
+.c-button-2:hover
+{
+    color: #fff;
+    background-color: #a6eaf1;
+}
+
+
+/* 常用园倒角 */
+.radius5
+{
+    border-radius: 5px;
+}
+
+.radius8
+{
+    border-radius: 8px;
+}
+
+.radius15
+{
+    border-radius: 15px;
+}
+
+
+/* 水波纹效果 */
+#m,
+#w
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#m
+{
+    position: relative;
+    padding: 3px;
+    border: 2px solid #3DA9BC;
+}
+
+/* 标题样式 */
+#m>span{
+    position: absolute;
+    display: block;
+    top: 40%;
+    left: 50%;
+    z-index: 99;
+    font-size: 10px;
+    transform: translate(-50%, -50%);
+    color: #3DA9BC;
+    text-transform: uppercase;
+}
+
+#w
+{
+    position: relative;
+    overflow: hidden;
+    background-color: #3DA9BC;
+}
+
+#w::before
+{
+    position: absolute;
+    top: -40%;
+    left: 50%;
+
+    display: block;
+
+    width: 200%;
+    height: 200%;
+
+    content: '';
+    transform: translate(-50%, -50%);
+
+    opacity: .5;
+    border-radius: 36%;
+    background-color: #fff;
+
+    /* 添加动画 匀速 无限循环 */
+    animation: wa 6s linear infinite;
+}
+
+/* 自旋转同时保证位置偏移不变 */
+@keyframes wa{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

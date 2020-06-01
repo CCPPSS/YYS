@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CPS-YSS</title>
+</head>
+<style>
+body,
+html,
+ul,
+li,
+h1 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: Roboto, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#app {
+  height: 100vh;
+}
+
+#app>nav {
+  display: flex;
+  background-color: #2D91FC;
+  flex-direction: column;
+  width: 220px;
+  justify-content: space-evenly;
+  box-shadow: -1px 0 15px #676666;
+  z-index: 500;
+}
+
+#app nav section {
+  width: 100%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+#app main {
+  display: flex;
+  height: 100vh;
+  width: 0;
+  background-color: #DCD7D7;
+}
+
+#app main>header {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  width: 100px;
+}
+
+
+#app main>article>section {
+  width: 600px;
+  height: 300px;
+  background-color: #B1BDC1;
+
+}
+
+
+
+#app footer {
+  position: fixed;
+  bottom: 0px;
+  min-width: 800px;
+  width: 100vw;
+  height: 30px;
+  background-color: #8B8B8C;
+}
+
+</style>
+
+<body>
+  <!-- app -->
+  <div id="app">
+    <!-- 左边导航 -->
+    <nav>
+      <section>
+        <h2>快捷操作</h2>
+        <select
+          name="conut_list"
+          id="conut_list"
+        >
+          <optgroup label="账号列表">
+            <option value="count_1">账号1</option>
+            <option value="count_2">账号2</option>
+            <option value="count_3">账号3</option>
+          </optgroup>
+          <optgroup label="配置">
+            <option value="count_1">保存当前配置</option>
+            <option value="count_2">读取当前配置</option>
+            <option value="count_3">获取默认配置</option>
+          </optgroup>
+        </select>
+      </section>
+
+      <section>
+        <button>登录</button>
+        <button>仪表盘</button>
+        <button>常用配置</button>
+        <button>账号管理</button>
+        <button>插件管理</button>
+      </section>
+
+      <section>
+        <ul>
+          <h2>更多</h2>
+          <li>关于</li>
+          <li>购买</li>
+        </ul>
+      </section>
+
+    </nav>
+
+    <main>
+      <header>
+        <section>
+          <!-- 标题 -->
+          <h1>当前所在的模块</h1>
+        </section>
+
+        <section>
+          <button>登录</button>
+        </section>
+
+        <section>
+          <button>自定义</button>
+        </section>
+
+      </header>
+
+      <article>
+        <section>
+          <header>
+            <h3>探索配置</h3>
+          </header>
+          <article>
+            <form
+              action="c1.js"
+              tag="探索配置"
+            >
+              <label for="">
+                章节选择
+                <select
+                  name=""
+                  id=""
+                >
+                  <option value="最新">最新</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+              </label>
+            </form>
+          </article>
+        </section>
+      </article>
+
+      <footer>模块状态条</footer>
+    </main>
+
+    <footer>插件状态条
+      <progress
+        value="20"
+        max="100"
+      ></progress></footer>
+  </div>
+
+</html>

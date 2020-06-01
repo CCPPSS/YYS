@@ -1,0 +1,40 @@
+{
+  "name": "electron_6.x",
+  "version": "1.0.0",
+  "description": "using by electron6.0 with ffi-napi",
+  "main": "main.js",
+  "scripts": {
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rebuild": ".\\node_modules\\.bin\\electron-rebuild.cmd",
+    "s": "electron .",
+    "b": "webpack --config webpack/config/webpack.config.js"
+  },
+  "build": {
+    "appId": "your.id"
+  },
+  "private": true,
+  "author": "CPS",
+  "license": "ISC",
+  "dependencies": {
+    "clw": "^1.0.5",
+    "electron": "6.0.0",
+    "element-ui": "^2.12.0",
+    "ffi-napi": "^2.4.5",
+    "ref-napi": "^1.4.2",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "less-loader": "^6.1.0",
+    "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
