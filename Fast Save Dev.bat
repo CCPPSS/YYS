@@ -15,12 +15,12 @@ set "ip=%1%"
 @set "saveName=[%ip%]-%newDate%-%newTime%"
 
 git commit -m %saveName%
-git push origin dev
+git push
 goto end
 
 :save
 git commit -m "%computername% [Fast Save] %DATE%-%time%"
-git push origin dev
+git push
 
 :end
 pause
