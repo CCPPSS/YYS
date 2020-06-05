@@ -1,4 +1,19 @@
 'use strict'
+
+/**
+ * 类型判断，返回准确类型
+ *
+ * @param      {<type>}  data    The data
+ * @return     {<type>}  { description_of_the_return_value }
+ */
+exports.typeof = function(data) {
+  let value = /\[object (\w+)\]/.exec(
+    Object.prototype.toString.call(data)
+  );
+  return value ? value[1].toLowerCase() : '';
+}
+
+
 /**
  * 根据id返回一个 dom对象或者多个对象的集合
  *
