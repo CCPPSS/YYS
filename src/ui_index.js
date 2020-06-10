@@ -1,0 +1,21 @@
+let nav = [{
+  title: 'home',
+  path: 'index',
+  tpl: 'home',
+}, {
+  title: '我的插件',
+  path: 'main',
+  tpl: 'main',
+}, {
+  title: '账号管理',
+  path: 'account',
+  tpl: 'account',
+}, {
+  title: '插件设置',
+  path: 'settings',
+  tpl: 'settings',
+}, {
+  title: '其他设置',
+  path: 'other',
+  tpl: 'other',
+}, ]
