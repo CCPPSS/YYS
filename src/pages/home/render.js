@@ -1,4 +1,4 @@
-import layout from '../../layout/render.js';
+import layout from '@src/layout/render.js';
 import content from './home.ejs';
 import d from './data.js';
 

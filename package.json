@@ -7,7 +7,7 @@
   "scripts": {
     "rebuild": ".\\node_modules\\.bin\\electron-rebuild.cmd",
     "s": "electron .",
-    "b": "webpack --config config/webpack.config.js"
+    "b": "webpack --config webpack/webpack.config.js"
   },
   "build": {
     "appId": "your.id"
