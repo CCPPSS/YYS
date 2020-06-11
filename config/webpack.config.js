@@ -30,12 +30,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      templateParameters: {
-        'ccvb': 'ccvb',
-      },
       title: 'ejs 生成的模板页面',
       filename: 'index.html',
-      template: path.resolve(__dirname, '../src/index.ejs')
+      template: path.resolve(__dirname, '../src/pages/home/render.js'),
+      xhtml: true
     })
   ]
 }
