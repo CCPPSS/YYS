@@ -1,0 +1,27 @@
+#btnPrim {
+  background-color: #1BA1F8;
+}
+
+#btnPrim:hover {
+  background-color: #3fd3f2;
+}
+
+.bordered {
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+
+#menu a {
+  /*ccvbbb*/
+  color: #111;
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+
+#btn-test {
+  background-color: #1BA1F8;
+}
+
+#btn-test:hover {
+  background-color: #3fd3f2;
+}
