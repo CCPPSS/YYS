@@ -1,0 +1,13 @@
+<div>
+    <%= main%>
+    <% list.forEach(item=>{ %>
+       <div>
+          <%= item %>
+       </div>
+    <% }) %>
+    <% if (list) { %>
+        <div>
+            <%=list[0]%>
+        </div>
+    <% } %>
+</div>

@@ -1,4 +1,5 @@
 'use strict'
+const template = 'ejs' //ejs或者jade
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -17,10 +18,7 @@ module.exports = {
   resolve: {
     alias: {
       '@src': path.resolve(__dirname, '../src'),
-      'layout': path.resolve(__dirname, '../src/layout/render.js'),
-      'ejs': path.resolve(__dirname, '../src/layout/render.js'),
-      'jade': path.resolve(__dirname, '../src/layout/render.js'),
-      'pug': path.resolve(__dirname, '../src/layout/render.js'),
+      'layout': path.resolve(__dirname, `../src/layout/${template}/render.js`),
     }
   },
   entry: path.resolve(__dirname, '../src/index.js'),
@@ -53,9 +51,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'ejs 生成的模板页面',
+      title: `生成${template}模板页面`,
       filename: 'index.html',
-      template: path.resolve(__dirname, '../src/pages/home/render.js'),
+      template: path.resolve(__dirname, `../src/pages/home/${template}/render.js`),
       xhtml: true
     })
   ]
