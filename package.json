@@ -19,7 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "clw": "^1.0.5",
-    "electron": "6.0.0",
+    "electron": "9.4.0",
     "element-ui": "^2.12.0",
     "ffi-napi": "^2.4.5",
     "ref-napi": "^1.4.2",
